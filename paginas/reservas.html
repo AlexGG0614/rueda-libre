@@ -22,19 +22,94 @@
     <ul>
         <main>
             <section>
-                <h2>¿Cómo reservar?</h2>
-                <p>Para reservar tu bicicleta, por favor escribe a nuestro correo electrónico: <a
-                        href="mailto:reservas@ruedalibre.com">reservas@ruedalibre.com</a></p>
+                <h2>Formulario de reserva</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Tus datos</legend>
+                        <p>
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </p>
+                        <p>
+                            <label for="documento">Número de documento:</label>
+                            <input type="text" id="documento" name="documento" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required title="Ingresa un número de teléfono válido de 10 dígitos">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tu alquiler</legend>
+                    <p>
+                        <label for="fecha">Fecha de reserva:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </p>
+                    <p>
+                        <label for="tipo_bicicleta">Tipo de bicicleta:</label>
+                        <select id="tipo_bicicleta" name="tipo_bicicleta" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="urbana">Bicicleta Urbana</option>
+                            <option value="montaña">Bicicleta de Montaña</option>
+                            <option value="electrica">Bicicleta Eléctrica</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="plan">Duración del alquiler:</label>
+                        <select id="plan" name="plan" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="1h">1 Hora</option>
+                            <option value="4h">Medio día (4h)</option>
+                            <option value="1d">Día completo</option>
+                        </select>
+                    </p>
+                        <p>
+                            <label for="cantidad_bicicletas">Cantidad de bicicletas:</label>
+                            <input type="number" id="cantidad_bicicletas" name="cantidad_bicicletas" min="1" max="10" required>
+                        </p>
+                    <p>
+                        <label for="recorrido">Recorrido (opcional):</label>
+                        <select id="recorrido" name="recorrido">
+                            <option value="">Selecciona una opción</option>
+                            <option value="ninguno">Ninguno</option>
+                            <option value="urbano">Recorrido Urbano</option>
+                            <option value="montaña">Recorrido de Montaña</option>
+                            <option value="cultural">Recorrido Cultural</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="comentarios">Comentarios adicionales:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+                    </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Confirmación</legend>
+                        <p>
+                            <input type="checkbox" id="terminos" name="terminos" required>
+                            <label for="terminos">Acepto los términos y condiciones</label>
+                        </p>
+                        <p>
+                            <input type="submit" value="Enviar reserva">
+                        </p>
+                    </fieldset>
+                    
+                </form>
 
                 <h2>Horarios de reserva</h2>
-
+                    </section>
+                    <aside>
                 <dl>
                     <dt>Lunes a viernes</dt>
                     <dd>7:00 a. m. - 7:00 p. m.</dd>
 
                     <dt>Sábados, domingos y festivos</dt>
                     <dd>6:00 a. m. - 2:00 p. m.</dd>
-            </section>
+                    </aside>
+        
         </main>
         <footer>
             <p>Rueda libre, correo electrónico: <a href="mailto:info@ruedalibre.com">info@ruedalibre.com, año 2026</a>
