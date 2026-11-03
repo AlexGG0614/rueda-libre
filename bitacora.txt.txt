@@ -4,4 +4,13 @@ Host: 127.0.0.1:5500
 Puerto: 5500
 Ruta: /index.html
 Metodo de peticion: GET
-Codigo de estado: 304 Not Modified
+Codigo de estado: 200 OK
+
+Al colocar una ruta inexitente, el codigo que me respondió el servidor 
+fue 404 Not Found y esto quiere decir que el servidor se comunico
+correctamente con el navegador, pero no pudo encontrar el archivo.
+
+HTML: sera la estructura de mi pagina.
+CSS: dara estilo y diseño a mi pagina.
+JavaScrip: es el lenguaje de programacion que me ayudará con toda
+la parte lógica.
